@@ -6,7 +6,9 @@ plugins {
 android {
     namespace 'com.rodriguez.juan.laboratoriocalificado02'
     compileSdk 35
-
+    buildFeatures {
+        viewBinding true
+    }
     defaultConfig {
         applicationId "com.rodriguez.juan.laboratoriocalificado02"
         minSdk 26
