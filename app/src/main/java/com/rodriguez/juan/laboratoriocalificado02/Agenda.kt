@@ -7,7 +7,6 @@ class Agenda {
         contactos.add(contacto)
         println("Contacto agregado: ${contacto.nombre}")
     }
-
     fun listarContactos() {
         if (contactos.isEmpty()) {
             println("No hay contactos en la agenda.")
@@ -18,7 +17,6 @@ class Agenda {
             }
         }
     }
-
     fun buscarPorNombre(nombre: String) {
         val list = contactos.filter { contacto ->
             contacto.nombre.contains(nombre, ignoreCase = true)
